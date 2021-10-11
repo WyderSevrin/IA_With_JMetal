@@ -24,6 +24,7 @@ import jmetal.core.Operator;
 import jmetal.core.Problem;
 import jmetal.core.SolutionSet;
 import jmetal.metaheuristics.nsgaII.NSGAII;
+import jmetal.metaheuristics.nsgaII.ssNSGAII;
 import jmetal.operators.crossover.CrossoverFactory;
 import jmetal.operators.mutation.MutationFactory;
 import jmetal.operators.selection.SelectionFactory;
@@ -97,8 +98,8 @@ public class NSGAII_main {
       problem = new SensorDeployment("Real",50); // 10/2 = le nombre de capteur
     }
     
-    algorithm = new NSGAII(problem);
-    //algorithm = new ssNSGAII(problem);
+    //algorithm = new NSGAII(problem);
+    algorithm = new ssNSGAII(problem);
 
     // Algorithm parameters
     algorithm.setInputParameter("populationSize",100);

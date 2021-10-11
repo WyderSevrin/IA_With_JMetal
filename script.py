@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Ouvrir le fichier en lecture seule
-file = open('C:\\Users\\Sevrin\\Documents\\ESIREM\\Systeme Intelligent\\TP\\TP2\\VAR', "r")
-file2 = open('C:\\Users\\Sevrin\\Documents\\ESIREM\\Systeme Intelligent\\TP\\TP2\\cibles3.txt', "r")
+file = open('C:\\Users\\Sevrin\\Documents\\COURS\ESIREM\\5A\\SystemeIntelligent\\TP\\GIT\\IA_With_JMetal\\VAR', "r")
+file2 = open('C:\\Users\\Sevrin\\Documents\\COURS\\ESIREM\\5A\\SystemeIntelligent\\TP\\GIT\\IA_With_JMetal\\cibles3.txt', "r")
 
 x = []
 y = []

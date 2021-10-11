@@ -7,6 +7,9 @@ import jmetal.util.JMException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
@@ -127,6 +130,13 @@ public class SensorDeployment extends Problem {
         solution.setObjective(0,-f1);
         solution.setObjective(1,-f2);
         //System.out.println("f1 : "+f1 +"    f2: "+f2);
+        String txt = f1 +" "+(f2)+"\n";
+        try {
+            Files.write(Paths.get("pareto.txt"), txt.getBytes(), StandardOpenOption.APPEND);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
