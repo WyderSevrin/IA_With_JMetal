@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-10-11T09:07:18.067895900Z</date>
+  <millis>1633943238067</millis>
+  <nanos>895900</nanos>
+  <sequence>0</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>NSGAII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 3716ms</message>
+</record>
+<record>
+  <date>2021-10-11T09:07:18.090573400Z</date>
+  <millis>1633943238090</millis>
+  <nanos>573400</nanos>
+  <sequence>1</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>NSGAII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2021-10-11T09:07:18.112456200Z</date>
+  <millis>1633943238112</millis>
+  <nanos>456200</nanos>
+  <sequence>2</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>NSGAII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+</log>
