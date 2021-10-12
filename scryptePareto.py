@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-file = open('C:\\Users\\Sevrin\\Documents\\COURS\\ESIREM\\5A\\SystemeIntelligent\\TP\\GIT\\IA_With_JMetal\\pareto.txt', "r")
+file = open('C:\\Users\\Sevrin\\Documents\\COURS\\ESIREM\\5A\\SystemeIntelligent\\TP\\GIT\\IA_With_JMetal\\Pareto.txt', "r")
 
 
 x = []
@@ -18,7 +18,7 @@ while line:
 file.close()
 
 plt.plot(x, y,'go')
-plt.title('Nuage de points avec Matplotlib')
-plt.xlabel('x')
-plt.ylabel('y')
+plt.title('Front de Pareto')
+plt.xlabel('x (f1)')
+plt.ylabel('y (f2)')
 plt.show()

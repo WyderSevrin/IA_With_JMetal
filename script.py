@@ -20,12 +20,6 @@ file.close()
 
 plt.plot(x, y,'go')
 
-for i in range(len(x)-1):
-    circle2 = plt.Circle((x[i], y[i]), 85, color='blue',fill=False)
-    
-    fig = plt.gcf()
-    ax = fig.gca()
-    ax.add_patch(circle2)
 
 
 #Affiche les cibles
@@ -40,7 +34,16 @@ while line:
     line = file2.readline()
 file2.close()
 
-plt.plot(x2, y2,'ro')
+
+for i in range(len(x2)):
+    circle2 = plt.Circle((x2[i], y2[i]), 85, color='blue',fill=False)
+    
+    fig = plt.gcf()
+    ax = fig.gca()
+    ax.add_patch(circle2)
+
+
+plt.plot(x2, y2,'ro',marker="*")
 plt.title('Nuage de points avec Matplotlib')
 plt.xlabel('x')
 plt.ylabel('y')

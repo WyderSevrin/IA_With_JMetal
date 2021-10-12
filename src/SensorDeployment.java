@@ -119,7 +119,7 @@ public class SensorDeployment extends Problem {
         //Objectif 2 --> a Maximiser
         double minimumOfT = 0; //f2
         for(int i = 0; i<nbCible;i++){
-            if(minimumOfT<T[i]){
+            if(minimumOfT>T[i]){
                 minimumOfT = T[i];
             }
         }
@@ -128,14 +128,10 @@ public class SensorDeployment extends Problem {
         double f2 = minimumOfT;
 
         solution.setObjective(0,-f1);
-        solution.setObjective(1,-f2);
+        solution.setObjective(1,f2);
         //System.out.println("f1 : "+f1 +"    f2: "+f2);
         String txt = f1 +" "+(f2)+"\n";
-        try {
-            Files.write(Paths.get("pareto.txt"), txt.getBytes(), StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
 
     }
 
